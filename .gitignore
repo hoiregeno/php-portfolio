@@ -1,0 +1,2 @@
+# Ignore MySQL database connection
+configs/db.php
