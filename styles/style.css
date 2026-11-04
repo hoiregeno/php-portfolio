@@ -5,3 +5,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* BASE STYLES */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #001a1a;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffffff;
+  padding: min(2rem, 7%);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* LAYOUT STYLES */
+.wrapper {
+  width: min(60rem, 100%);
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002020;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+}
+
+.navbar__logo,
+.link-wrapper__links {
+  color: #00ffff;
+  font-weight: 700;
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+}
+
+.link-wrapper {
+  display: flex;
+  gap: 2rem;
+}
