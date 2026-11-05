@@ -24,6 +24,13 @@ ul li {
   list-style-type: none;
 }
 
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 /* LAYOUT STYLES */
 .wrapper {
   width: min(60rem, 100%);
@@ -51,6 +58,7 @@ ul li {
 
 .link-wrapper {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -63,11 +71,29 @@ ul li {
   color: darkkhaki;
 }
 
+.navbar .btn {
+  display: none;
+  transition: background-color 100ms ease;
+}
+.navbar .btn:hover {
+  background-color: #001a1a;
+}
+
 @media screen and (max-width: 570px) {
+  .navbar .btn {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+  }
+
+  .navbar .btn:last-child {
+    margin: 1rem;
+  }
+
   .link-wrapper {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     z-index: 10;
     background-color: #002020;
     height: 100%;
@@ -76,6 +102,13 @@ ul li {
     gap: 0;
     border-left: 1.5px solid hsla(180, 100%, 16%, 0.1);
     box-shadow: 0 -5px 20px hsla(180, 100%, 16%, 0.25);
+  }
+  .open-sidebar {
+    right: 0;
+  }
+
+  .link-wrapper li {
+    width: 100%;
   }
 
   .link-wrapper__links {
