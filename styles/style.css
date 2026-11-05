@@ -53,3 +53,37 @@ ul li {
   display: flex;
   gap: 2rem;
 }
+
+.link-wrapper__links {
+  transition:
+    background-color 100ms ease,
+    color 100ms ease;
+}
+.link-wrapper__links:hover {
+  color: darkkhaki;
+}
+
+@media screen and (max-width: 570px) {
+  .link-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #002020;
+    height: 100%;
+    width: min(300px, 100%);
+    flex-direction: column;
+    gap: 0;
+    border-left: 1.5px solid hsla(180, 100%, 16%, 0.1);
+    box-shadow: 0 -5px 20px hsla(180, 100%, 16%, 0.25);
+  }
+
+  .link-wrapper__links {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-align: center;
+  }
+  .link-wrapper__links:hover {
+    background-color: #001a1a;
+  }
+}
