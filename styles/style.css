@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 /* BASE STYLES */
 body {
   font-family: Arial, sans-serif;
@@ -13,7 +18,14 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #ffffff;
-  padding: min(2rem, 7%);
+  padding: 0 min(2rem, 7%);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #001a1a;
+  padding-block: 1rem;
 }
 
 a {
@@ -29,6 +41,10 @@ button {
   outline: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+section {
+  padding-block: 2rem;
 }
 
 /* LAYOUT STYLES */
