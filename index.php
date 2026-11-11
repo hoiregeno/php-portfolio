@@ -26,6 +26,7 @@
           <li><a href="#projects" class="link-wrapper__links">Projects</a></li>
           <li><a href="#contact" class="link-wrapper__links">Contact</a></li>
         </ul>
+        <div class="overlay"></div>
       </nav>
     </header>
     <main>
